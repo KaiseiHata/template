@@ -22,5 +22,9 @@ module Template
     end
     config.sass.preferrd_syntax = :sass
     config.sass.syntax = :sass
+
+    config.i18n.default_locale = :ja
+
+    config.time_zone = 'Tokyo'
   end
 end
