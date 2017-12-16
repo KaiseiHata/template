@@ -14,5 +14,13 @@ module Template
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.generators do |g|
+      g.assets false
+      g.helper false
+      g.template_engine = :erb
+      g.test_framework :rspec, view_specs: false, routing_specs: false
+    end
+    config.sass.preferrd_syntax = :sass
+    config.sass.syntax = :sass
   end
 end
