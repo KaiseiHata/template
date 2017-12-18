@@ -32,6 +32,52 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#UI/UX
+gem 'font-awesome-rails'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+
+# 役割定義
+gem 'cancancan'
+
+# ユーザー機能
+gem 'devise'
+gem 'devise-i18n'
+
+# 各種ファイル設定用
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
+# 検索機能
+gem 'ransack'
+
+# ページネーション
+gem 'kaminari'
+
+# アップロード用
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+# ↑クラウドに画像をあげる関連でやらかしたときに見直す！
+# Thank you for installing fog!
+
+# IMPORTANT NOTICE:
+# If there's a metagem available for your cloud provider, e.g. `fog-aws`,
+# you should be using it instead of requiring the full fog collection to avoid
+# unnecessary dependencies.
+
+# 'fog' should be required explicitly only if:
+# - The provider you use doesn't yet have a metagem available.
+# - You require Ruby 1.9.3 support.
+
+
+# フォーム
+gem 'bootstrap_form'
+
+# Model拡張
+gem 'active_hash'
+
+# 管理画面
+gem 'adminlte2-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,6 +85,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'pry-rails'
+  gem 'awesome_print'
 end
 
 group :development do
